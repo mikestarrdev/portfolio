@@ -5,7 +5,7 @@ function Contact() {
   const [message, setMessage] = useState("");
 
   return (
-    <div className="flex flex-col my-5 mx-auto align-center justify-center text-center p-3 bg-[#C6EBBE]">
+    <div className="flex flex-col my-5 mx-auto align-center justify-center text-center p-3 bg-[#F6AE2D]">
       <h1 className="text-3xl m-auto">Contact:</h1>
 
       <h3 className="text-1xl m-auto my-2">

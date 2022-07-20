@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const [display, handleDisplay] = useState("none");
+  function handleToggler() {}
+
   return (
     <nav
       className="
@@ -11,7 +14,8 @@ flex flex-wrap
 items-center
 justify-between
 py-4
-bg-gray-100
+bg-[#7ca5b8]
+bg-gradient-to-r from-[#5D90B1] to-[#86BBD8]
 text-gray-500
 hover:text-gray-700
 focus:text-gray-700
@@ -21,16 +25,7 @@ navbar navbar-expand-lg navbar-light
     >
       <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
         <button
-          className="
-    navbar-toggler
-    text-gray-500
-    border-0
-    hover:shadow-none hover:no-underline
-    py-2
-    px-2.5
-    bg-transparent
-    focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
-  "
+          className={`navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline display:${display}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -58,11 +53,11 @@ navbar navbar-expand-lg navbar-light
           className="collapse navbar-collapse flex-grow items-center"
           id="navbarSupportedContent"
         >
-          <a className="text-xl text-black" href="#">
+          <a className="text-xl text-white" href="#">
             Navbar
           </a>
           {/* <!-- Left links --> */}
-          <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+          <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto text-white">
             <li className="nav-item px-2">
               <a className="nav-link active" aria-current="page" href="#">
                 Home
@@ -70,7 +65,7 @@ navbar navbar-expand-lg navbar-light
             </li>
             <li className="nav-item pr-2">
               <a
-                className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0"
+                className="nav-link text-white hover:text-gray-200 focus:text-gray-700 p-0"
                 href="#"
               >
                 Features
@@ -78,14 +73,14 @@ navbar navbar-expand-lg navbar-light
             </li>
             <li className="nav-item pr-2">
               <a
-                className="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0"
+                className="nav-link text-white hover:text-gray-200 focus:text-gray-700 p-0"
                 href="#"
               >
                 Pricing
               </a>
             </li>
             <li className="nav-item pr-2">
-              <a className="nav-link disabled text-gray-300 p-0">Disabled</a>
+              <a className="nav-link disabled text-white p-0">Disabled</a>
             </li>
           </ul>
           {/* <!-- Left links --> */}

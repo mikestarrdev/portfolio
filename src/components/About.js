@@ -2,12 +2,12 @@ import React from "react";
 
 function About() {
   return (
-    <section className="flex-auto flex-col align-center justify-center m-auto w-auto">
+    <section className="flex-auto flex-col m-auto w-auto">
       <h1 className="text-3xl font-bold text-center m-auto my-5">About me:</h1>
       <h2 className="text-2xl font-bold text-center m-auto my-5">
         Front-end Developer, Web3 Enthusiast, Mountain Climber
       </h2>
-      <div className="text-center m-2">
+      <div className="text-left m-2">
         <p className="m-3">
           I like building stuff that can improve peoples' lives.{" "}
         </p>
