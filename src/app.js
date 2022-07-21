@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import GetInTouch from "./components/GetInTouch";
 import Footer from "./components/Footer";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Projects />
       <About />
-      <Contact />
+      <GetInTouch />
       <section>
         <div className="flex align-center justify-center m-auto w-auto">
           {/* <img

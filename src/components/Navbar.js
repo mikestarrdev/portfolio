@@ -15,7 +15,7 @@ items-center
 justify-between
 py-4
 bg-[#7ca5b8]
-bg-gradient-to-r from-[#5D90B1] to-[#86BBD8]
+bg-gradient-to-r from-[#2F4858] to-[#315771]
 text-gray-500
 hover:text-gray-700
 focus:text-gray-700

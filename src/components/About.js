@@ -39,44 +39,11 @@ function About() {
             Hobbies and Interests:
           </h4>
           <p className="m-3">
-            Other than coding, my main interests are climbing mountains,
-            traveling, trying new foods, and anything outdoors.
-          </p>
-          <p className="m-3">
-            <strong>Rock climbing:</strong>
-            <br />I enjoy technical rock climbing, especially multi-pitch trad
-            climbing in alpine settings. My 3 proudest climbs so far have been
-            East Buttress of Mt. Whitney, Venusian Blind on Temple Crag, and
-            Epinephrine, in Red Rock Canyon.
-          </p>
-          <p className="m-3">
-            <strong>Travel:</strong> <br />
-            Early success in my previous marketing career gave me the
-            opportunity to travel to over 35 countries and spend years overseas.
-            Countries I've spent the most time in are: Thailand, Taiwan and
-            Colombia.
+            Besides coding, my main interests are climbing mountains, technical
+            rock climbing, traveling, trying new foods, cooking, camping, hiking
+            and anything outdoors.
           </p>
         </div>
-      </div>
-      <div className="text-center m-2">
-        <h4 className="text-base font-bold text-center m-auto">
-          Stay up to date with me:
-        </h4>
-        <p className="m-1">
-          <a href="https://github.com/personnamedmike" target="_">
-            GitHub
-          </a>
-        </p>
-        <p className="m-1">
-          <a href="https://linkedin/in/mike-starr" target="_">
-            LinkedIn
-          </a>
-        </p>
-        <p className="m-1">
-          <a href="https://twitter.com/starr_dev" target="_">
-            Twitter
-          </a>
-        </p>
       </div>
     </section>
   );
