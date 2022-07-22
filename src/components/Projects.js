@@ -8,7 +8,7 @@ import nftBuildUI from "../img/nft-buidl-ui.png";
 
 function Projects() {
   return (
-    <div className="bg-gradient-to-r from-[#5D90B1] to-[#86BBD8] p-2 lg:pb-10">
+    <div className="bg-gradient-to-r from-[#5D90B1] to-[#86BBD8] px-2 pb-10 pt-2 lg:px-10">
       <h2 className="text-2xl text-center m-2 pb-2">Projects</h2>
       {/* Projects div container */}
       <div className="flex flex-col md:flex-row lg:px-14 xl:px-32 justify-evenly text-center content-center">

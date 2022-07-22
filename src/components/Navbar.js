@@ -54,13 +54,13 @@ navbar navbar-expand-lg navbar-light
           id="navbarSupportedContent"
         >
           <a className="text-xl text-white" href="#">
-            Navbar
+            Projects
           </a>
           {/* <!-- Left links --> */}
           <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto text-white">
             <li className="nav-item px-2">
               <a className="nav-link active" aria-current="page" href="#">
-                Home
+                About
               </a>
             </li>
             <li className="nav-item pr-2">
@@ -68,7 +68,7 @@ navbar navbar-expand-lg navbar-light
                 className="nav-link text-white hover:text-gray-200 focus:text-gray-700 p-0"
                 href="#"
               >
-                Features
+                Skills
               </a>
             </li>
             <li className="nav-item pr-2">
@@ -76,32 +76,13 @@ navbar navbar-expand-lg navbar-light
                 className="nav-link text-white hover:text-gray-200 focus:text-gray-700 p-0"
                 href="#"
               >
-                Pricing
+                Social Media
               </a>
-            </li>
-            <li className="nav-item pr-2">
-              <a className="nav-link disabled text-white p-0">Disabled</a>
             </li>
           </ul>
-          {/* <!-- Left links --> */}
         </div>
-        {/* <!-- Collapsible wrapper --> */}
       </div>
     </nav>
-    // <nav className="bg-[#7ca5b8]">
-    //   <ul className="flex flex-row m-auto p-0 align-center justify-center">
-    //     <NavLink to="/">
-    //       <li className="my-4 mx-3">Home</li>
-    //     </NavLink>
-    //     <li className="my-4 mx-3">Links</li>
-    //     <li className="my-4 mx-3">Github</li>
-    //     <li className="my-4 mx-3">LinkedIn</li>
-    //     <li className="my-4 mx-3">Twitter</li>
-    //     <NavLink to="/contact">
-    //       <li className="my-4 mx-3">Contact</li>
-    //     </NavLink>
-    //   </ul>
-    // </nav>
   );
 }
 
