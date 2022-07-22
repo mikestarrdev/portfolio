@@ -12,7 +12,6 @@ module.exports = {
       },
       backgroundImage: {
         whitney: "url('/src/img/header-whitney.jpg')",
-        // gradient: "url('./src/img/stacked-peaks-haikei.svg')",
       },
     },
   },

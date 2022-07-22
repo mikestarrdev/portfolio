@@ -3,21 +3,26 @@ import React from "react";
 function GetInTouch() {
   return (
     <div className="text-center p-4 bg-[#86BBD8]">
-      <div className="flex flex-col bg-white p-4 w-2/3 m-auto border border-[#5D90B1]">
+      <div className="flex flex-col bg-white p-4 w-full md:w-fit m-auto border border-[#5D90B1]">
         <h4 className="font-bold text-center m-auto">Follow me:</h4>
-        <p className="flex flex-row m-2 border-2 border-black">
-          <a href="https://github.com/personnamedmike" target="_">
-            GitHub
-          </a>
-          {" | "}
-          <a href="https://linkedin/in/mike-starr" target="_">
-            LinkedIn
-          </a>
-          {" | "}
-          <a href="https://twitter.com/starr_dev" target="_">
-            Twitter
-          </a>
-        </p>
+        {/* socials */}
+        <div className="flex flex-row justify-center my-2">
+          <div className="flex flex-col border-2 m-2 p-4">
+            <a href="https://github.com/personnamedmike" target="_">
+              GitHub{" "}
+            </a>
+          </div>
+          <div className="flex flex-col border-2 m-2 p-4">
+            <a href="https://linkedin/in/mike-starr" target="_">
+              LinkedIn
+            </a>
+          </div>
+          <div className="flex flex-col border-2 m-2 p-4">
+            <a href="https://twitter.com/starr_dev" target="_">
+              Twitter
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
