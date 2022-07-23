@@ -38,20 +38,20 @@ function Projects() {
           </div>
           <p className="text-xs italic">Home screen</p>
           <div className="flex-col flex justify-start ">
-            <p className="text-left font-bold text-xs md:text-sm underline text-center text-[#315771] border border-[#86BBD8] rounded-full drop-shadow p-4 w-fit my-4 mx-auto">
-              <a
-                href="https://drive.google.com/file/d/1GFPKk4q6Fz2F1oRBtkMYcWsBTtJSyCFX/view"
-                target="_"
-                className="flex justify-center"
+            <div className="text-left font-bold text-xs md:text-sm underline text-center text-[#315771] w-fit my-4 mx-auto">
+              <button
+                type="button"
+                class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
               >
-                Click for video demo
-                <img
-                  src={openIcon}
-                  width="15px"
-                  className="flex flex-row ml-2"
-                />
-              </a>
-            </p>
+                <a
+                  href="https://drive.google.com/file/d/1GFPKk4q6Fz2F1oRBtkMYcWsBTtJSyCFX/view"
+                  target="_"
+                  className="flex justify-center"
+                >
+                  Click to watch video demo
+                </a>
+              </button>
+            </div>
           </div>
           <ul className="list-disc list-inside text-left">
             <li>
