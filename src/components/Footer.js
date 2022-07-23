@@ -3,10 +3,11 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <div className="text-center p-6 bg-gray-200">
-        <p className="m-2">© 2022 Copyright </p>
-        <p>
-          <span className="italic">Use this code as you wish</span>
+      <div className="text-center p-12 bg-gray-200">
+        <p className="m-0">
+          © 2022 Copyright
+          <br />
+          Mike Starr
         </p>
       </div>
     </footer>

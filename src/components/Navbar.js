@@ -79,6 +79,14 @@ navbar navbar-expand-lg navbar-light
                 Social Media
               </a>
             </li>
+            <li className="nav-item pr-2">
+              <a
+                className="nav-link text-white hover:text-gray-200 focus:text-gray-700 p-0"
+                href="#"
+              >
+                Extra
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import GetInTouch from "./GetInTouch.js";
 import cssLogo from "../img/tech-logos/css.jpg";
 import htmlLogo from "../img/tech-logos/html5.png";
 import jsLogo from "../img/tech-logos/JavaScript_logo.png";
