@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9e18abb3.css",
+    "main.js": "/static/js/main.da350feb.js",
+    "static/media/ruby.png": "/static/media/ruby.c1f7c7eb2141cd1c2518.png",
+    "static/media/crypto-portal-1.png": "/static/media/crypto-portal-1.3c207b8b0b64993c5ff5.png",
+    "static/media/crypto-portal-forum.png": "/static/media/crypto-portal-forum.ff8e13a46595218be13e.png",
+    "static/media/nft-buidl-ui.png": "/static/media/nft-buidl-ui.74b86dc86245b908ace7.png",
+    "static/media/crypto-portal-chart.png": "/static/media/crypto-portal-chart.855b32558d53a8c4f46b.png",
+    "static/media/css.jpg": "/static/media/css.709e42c395a2e9fce0a8.jpg",
+    "static/media/linkedin.jpeg": "/static/media/linkedin.bd1833001aa561a4984f.jpeg",
+    "static/media/github-icon.svg": "/static/media/github-icon.04ed74f38b41cdcbf14f80ae8cd0aa2b.svg",
+    "static/media/hamburger-icon.svg": "/static/media/hamburger-icon.93f839359851d8ed4e0903e4c28c4c87.svg",
+    "index.html": "/index.html",
+    "main.9e18abb3.css.map": "/static/css/main.9e18abb3.css.map",
+    "main.da350feb.js.map": "/static/js/main.da350feb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e18abb3.css",
+    "static/js/main.da350feb.js"
+  ]
+}

@@ -13,7 +13,7 @@ import githubLogo from "../img/tech-logos/github-icon.svg";
 function About() {
   return (
     <>
-      <section className="flex-auto flex-col m-auto w-auto">
+      <section className="flex-auto flex-col m-auto w-auto" id="about">
         <h1 className="text-3xl font-bold text-center m-auto my-5">
           About me:
         </h1>
@@ -44,7 +44,7 @@ function About() {
           </p>
         </div>
         {/* Start technologies */}
-        <div className="bg-[#86BBD8] px-2 py-4 tablet:py-8 px-2">
+        <div className="bg-[#86BBD8] px-2 py-4 tablet:py-8 px-2" id="skills">
           <h3 className="text-xl text-center font-bold mx-auto my-2 bg-white p-2 w-full tablet:w-4/5 lg:w-2/3 m-auto border-2 border-[#315771] rounded-3xl">
             Technologies:
           </h3>
@@ -149,7 +149,7 @@ function About() {
           </div>
         </div>
         {/* end technologies */}
-        <div className="text-center my-6 tablet:my-8 mx-2">
+        <div className="text-center my-6 tablet:my-8 mx-2" id="hobbies">
           <h4 className="text-base font-bold text-center m-auto">
             Hobbies and Interests:
           </h4>

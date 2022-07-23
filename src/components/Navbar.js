@@ -1,94 +1,68 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import hamburgerIcon from "../img/hamburger-icon.svg";
 
 function Navbar() {
-  const [display, handleDisplay] = useState("none");
-  function handleToggler() {}
+  const [mobileNav, setMobileNav] = useState("hidden");
+
+  function handleMobileCollapse() {
+    if (mobileNav === "hidden") {
+      setMobileNav("flex");
+    } else {
+      setMobileNav("hidden");
+    }
+  }
 
   return (
-    <nav
-      className="
-relative
-w-full
-flex flex-wrap
-items-center
-justify-between
-py-4
-bg-[#7ca5b8]
-bg-gradient-to-r from-[#2F4858] to-[#315771]
-text-gray-500
-hover:text-gray-700
-focus:text-gray-700
-shadow-lg
-navbar navbar-expand-lg navbar-light
-"
-    >
-      <div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-        <button
-          className={`navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline display:${display}`}
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="bars"
-            className="w-6"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-          >
-            <path
-              fill="currentColor"
-              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
-            ></path>
-          </svg>
-        </button>
-        <div
-          className="collapse navbar-collapse flex-grow items-center"
-          id="navbarSupportedContent"
-        >
-          <a className="text-xl text-white" href="#">
-            Projects
-          </a>
-          {/* <!-- Left links --> */}
-          <ul className="navbar-nav flex flex-col pl-0 list-style-none mr-auto text-white">
-            <li className="nav-item px-2">
-              <a className="nav-link active" aria-current="page" href="#">
-                About
-              </a>
-            </li>
-            <li className="nav-item pr-2">
-              <a
-                className="nav-link text-white hover:text-gray-200 focus:text-gray-700 p-0"
-                href="#"
+    <nav>
+      <div className="absolute top-0 flex bg-[#2F4858] w-full h-12">
+        <span className="flex flex-start basis-5/6 text-white uppercase tracking-widest text-xl px-4 py-2 items-center">
+          Mike Starr
+        </span>
+        <div className="flex flex-col basis-1/6 align-right justify-center place-items-end">
+          <div className="flex px-4 max-w-lg cursor-pointer">
+            {mobileNav === "hidden" ? (
+              <>
+                <div
+                  onClick={handleMobileCollapse}
+                  className="flex flex-col my-0.5"
+                >
+                  <div className="flex flex-col bg-white w-9 h-1.5 rounded"></div>
+                  <div className="flex flex-col bg-white w-9 h-1.5 mt-1.5 rounded"></div>
+                  <div className="flex flex-col bg-white w-9 h-1.5 mt-1.5 rounded"></div>
+                </div>
+              </>
+            ) : (
+              <span
+                onClick={handleMobileCollapse}
+                className="text-white my-0 text-2xl"
               >
-                Skills
-              </a>
-            </li>
-            <li className="nav-item pr-2">
-              <a
-                className="nav-link text-white hover:text-gray-200 focus:text-gray-700 p-0"
-                href="#"
-              >
-                Social Media
-              </a>
-            </li>
-            <li className="nav-item pr-2">
-              <a
-                className="nav-link text-white hover:text-gray-200 focus:text-gray-700 p-0"
-                href="#"
-              >
-                Extra
-              </a>
-            </li>
-          </ul>
+                🆇
+              </span>
+            )}
+          </div>
         </div>
+      </div>
+      <div
+        className={`${mobileNav} absolute fixed right-0 h-full w-1/2 xsm:w-2/5 tablet:w-2/6 lg:1/6 py-2 px-6 mt-12 text-right justify-end text-white text-lg bg-[#315771] border-[#2F4858] border-l-2 rounded-b leading-10 overflow-hidden`}
+      >
+        <ul>
+          <li onClick={handleMobileCollapse}>
+            <a href="#projects">Projects</a>
+          </li>
+          <li onClick={handleMobileCollapse}>
+            <a href="#about">About</a>
+          </li>
+          <li onClick={handleMobileCollapse}>
+            <a href="#skills">Skills</a>
+          </li>
+          <li onClick={handleMobileCollapse}>
+            <a href="#hobbies">Hobbies</a>
+          </li>
+          <li onClick={handleMobileCollapse}>
+            <a href="#social">Follow Me</a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

@@ -5,7 +5,7 @@ import twitter from "../img/tech-logos/twitter.png";
 
 function GetInTouch() {
   return (
-    <div className="text-center p-4 bg-[#33658A]">
+    <div className="text-center p-4 bg-[#33658A]" id="social">
       <div className="flex flex-col bg-white p-4 w-full m-auto border border-[#2F4858] rounded-lg">
         <h4 className="text-xl font-bold text-center m-auto mt-2">
           Follow me...
