@@ -9,28 +9,47 @@ import nftBuildUI from "../img/nft-buidl-ui.png";
 function Projects() {
   return (
     <div
-      className="bg-gradient-to-r from-[#5D90B1] to-[#86BBD8] px-2 pb-10 pt-12 lg:px-10"
+      className="bg-gradient-to-r from-[#5D90B1] to-[#86BBD8] px-4 pb-10 pt-12 lg:px-10"
       id="projects"
     >
-      <h2 className="text-2xl text-center m-2 pb-2">Projects</h2>
+      <h2 className="text-2xl text-center mb-2 mt-6 pb-2">Projects</h2>
       {/* Projects div container */}
       <div className="flex flex-col md:flex-row lg:px-14 xl:px-32 justify-evenly text-center content-center">
         {/* start project 1 */}
         <div className="md:w-1/3 p-5 md:px-2 lg:px-5 m-0.5 border-4 border-[#2F4858] rounded-3xl md:rounded-l-3xl md:rounded-r-none bg-white overflow-y-auto h-96">
           <h3 className="text-xl font-bold">Crypto Portal</h3>
+          <p className="flex flex-row align-center my-4 text-left">
+            <a
+              href="https://github.com/personnamedmike/Crypto-Portal"
+              target="_"
+            >
+              <img src={githubLogo} alt="GitHub" target="_" width="22px" />
+            </a>
+            <a
+              href="https://github.com/personnamedmike/Crypto-Portal"
+              target="_"
+            >
+              <span className="mx-2 items-center">Source code</span>
+            </a>
+          </p>
+          {/* image 1 */}
+          <div className="mt-4 mb-2 border-2 border-gray-100">
+            <img src={cryptoPortal1} alt="Crypto Portal screenshot" />
+          </div>
+          <p className="text-xs italic">Home screen</p>
           <div className="flex-col flex justify-start ">
-            <p className="flex flex-row align-center my-4 text-left">
+            <p className="text-left font-bold text-xs md:text-sm underline text-center text-[#315771] border border-[#86BBD8] rounded-full drop-shadow p-4 w-fit my-4 mx-auto">
               <a
-                href="https://github.com/personnamedmike/Crypto-Portal"
+                href="https://drive.google.com/file/d/1GFPKk4q6Fz2F1oRBtkMYcWsBTtJSyCFX/view"
                 target="_"
+                className="flex justify-center"
               >
-                <img src={githubLogo} alt="GitHub" target="_" width="27px" />
-              </a>
-              <a
-                href="https://github.com/personnamedmike/Crypto-Portal"
-                target="_"
-              >
-                <span className="mx-2 items-center">Source code</span>
+                Click for video demo
+                <img
+                  src={openIcon}
+                  width="15px"
+                  className="flex flex-row ml-2"
+                />
               </a>
             </p>
           </div>
@@ -59,21 +78,7 @@ function Projects() {
               Users can create posts, leave comments and create forum Video
             </li>
           </ul>
-          <p className="text-left font-bold text-xs md:text-sm underline text-center text-[#315771] border-2 border-gray-100 p-2 w-fit my-4 mx-auto">
-            <a
-              href="https://drive.google.com/file/d/1GFPKk4q6Fz2F1oRBtkMYcWsBTtJSyCFX/view"
-              target="_"
-              className="flex justify-center"
-            >
-              Click for video demo
-              <img src={openIcon} width="15px" className="flex flex-row ml-2" />
-            </a>
-          </p>
-          {/* image 1 */}
-          <div className="mt-4 mb-2 border-2 border-gray-100">
-            <img src={cryptoPortal1} alt="Crypto Portal screenshot" />
-          </div>
-          <p className="text-xs italic">Market cap data displayed onto UI</p>
+
           {/* Project #1, image 2 */}
           <div className="mt-4 mb-2 border-2 border-gray-100">
             <img
@@ -110,7 +115,7 @@ function Projects() {
               href="https://github.com/personnamedmike/Crypto-Portal"
               target="_"
             >
-              <img src={githubLogo} alt="GitHub" target="_" width="27px" />
+              <img src={githubLogo} alt="GitHub" target="_" width="22px" />
             </a>
             <a
               href="https://github.com/personnamedmike/Crypto-Portal"
@@ -123,9 +128,14 @@ function Projects() {
         {/* Start project #2 */}
         <div className="md:w-1/3 p-5 md:px-2 lg:px-5 m-0.5 border-4 border-[#2F4858] rounded-3xl md:rounded-none bg-white overflow-y-auto h-96">
           <h3 className="text-xl font-bold">NFT Buidl</h3>
+          {/* image 1 */}
+          <div className="mt-4 mb-2 border-2 border-gray-100">
+            <img src={nftBuildUI} alt="NFT Buidl UI" />
+          </div>
+          <p className="text-xs italic">Home screen UI</p>
           <p className="flex flex-row align-center my-4 text-left">
             <a href="https://github.com/personnamedmike/nft-buidl" target="_">
-              <img src={githubLogo} alt="GitHub" target="_" width="27px" />
+              <img src={githubLogo} alt="GitHub" target="_" width="22px" />
             </a>
             <a href="https://github.com/personnamedmike/nft-buidl" target="_">
               <span className="mx-2 items-center">Source code</span>
@@ -156,11 +166,7 @@ function Projects() {
             <li>Display users NFT collection on the app's UI</li>
             <li>Add functions to Solidity ERC721 smart contract</li>
             <li>Deploy to Ethereum mainnet</li>
-            {/* Project #2, image 1 */}
-            <div className="mt-4 mb-2 border-2 border-gray-100">
-              <img src={nftBuildUI} alt="NFT Buidl UI" />
-            </div>
-            <p className="text-xs italic">Market cap data displayed onto UI</p>
+
             {/* Project #2, image 2 */}
             <div className="mt-4 mb-2 border-2 border-gray-100">
               <img src={null} alt="" />
@@ -179,7 +185,7 @@ function Projects() {
           <hr className="my-3" />
           <p className="flex flex-row align-center mt-4 justify-center">
             <a href="https://github.com/personnamedmike/nft-buidl" target="_">
-              <img src={githubLogo} alt="GitHub" target="_" width="27px" />
+              <img src={githubLogo} alt="GitHub" target="_" width="22px" />
             </a>
             <a href="https://github.com/personnamedmike/nft-buidl" target="_">
               <span className="mx-2 items-center">Source code</span>
@@ -194,7 +200,7 @@ function Projects() {
               href="https://github.com/personnamedmike/personal-budget-tracker"
               target="_"
             >
-              <img src={githubLogo} alt="GitHub" target="_" width="27px" />
+              <img src={githubLogo} alt="GitHub" target="_" width="22px" />
             </a>
             <a
               href="https://github.com/personnamedmike/personal-budget-tracker"
@@ -217,38 +223,31 @@ function Projects() {
             </li>
             <li>Built frontend with React, JavaScript, HTML5 and CSS</li>
           </ul>
-          {/* image 1 */}
-          <div className="mt-4 mb-2 border-2 border-gray-100">
-            <img src={cryptoPortal1} alt="Crypto Portal screenshot" />
+          {/* delete class below */}
+          <div className="hidden">
+            {/* image 1 */}
+            <div className="mt-4 mb-2 border-2 border-gray-100">
+              <img src={null} alt="" />
+            </div>
+            <p className="text-xs italic">Lorum Ipsum</p>
+            {/* Project #3, image #2 */}
+            <div className="mt-4 mb-2 border-2 border-gray-100">
+              <img src={null} alt="" />
+            </div>
+            <p className="text-xs italic">Lorum Ipsum</p>
+            {/* Project #3, image #3 */}
+            <div className="mt-4 mb-2 border-2 border-gray-100">
+              <img src={null} alt="" />
+            </div>
+            <p className="text-xs italic">Lorum Ipsum</p>
           </div>
-          <p className="text-xs italic">Market cap data displayed onto UI</p>
-          {/* Project #3, image #2 */}
-          <div className="mt-4 mb-2 border-2 border-gray-100">
-            <img
-              src={cryptoPortalChart}
-              alt="Project #3, chart #feature screenshot"
-            />
-          </div>
-          <p className="text-xs italic">
-            Chart feature view of BTC. Time period can be adjusted
-          </p>
-          {/* Project #3, image #3 */}
-          <div className="mt-4 mb-2 border-2 border-gray-100">
-            <img
-              src={cryptoPortalChart}
-              alt="Crypto Portal chart feature screenshot"
-            />
-          </div>
-          <p className="text-xs italic">
-            Chart feature view of BTC. Time period can be adjusted
-          </p>
           <hr className="my-3" />
           <p className="flex flex-row align-center mt-4 justify-center">
             <a
               href="https://github.com/personnamedmike/personal-budget-tracker"
               target="_"
             >
-              <img src={githubLogo} alt="GitHub" target="_" width="27px" />
+              <img src={githubLogo} alt="GitHub" target="_" width="22px" />
             </a>
             <a
               href="https://github.com/personnamedmike/personal-budget-tracker"

@@ -13,35 +13,38 @@ import githubLogo from "../img/tech-logos/github-icon.svg";
 function About() {
   return (
     <>
-      <section className="flex-auto flex-col m-auto w-auto" id="about">
-        <h1 className="text-3xl font-bold text-center m-auto my-5">
-          About me:
-        </h1>
-        <h3 className="text-xl font-bold text-center my-5 mx-2">
-          Fullstack Developer, Web3 Enthusiast, Mountain Climber
-        </h3>
-        <div className="text-left m-2">
-          <p className="m-3">Marketer turned software engineer.</p>
-          <p className="m-3">
-            Experienced in React, JavaScript, and Ruby on Rails. Passionate
-            about building products that empower people to live better lives.
-            Excited to work in a fast paced, cutting-edge environment with a
-            team of other passionate builders.
-          </p>
-          <p className="m-3">
-            My excitement for software engineering and tech started May 12,
-            2021. I was spending my time reading about web3 and blockchain, and
-            wanted to understand how it worked underneath the hood.
-          </p>
-          <p className="m-3">
-            I started Solidity tutorials on CryptoZombies.io. I realized that I
-            needed to build up a better foundation, so I took a step back and
-            started to teach myself JavaScript.
-          </p>
-          <p className="m-3">
-            In January 2022, I started a 15 week software engineering program at
-            Flatiron School. The program totalled roughly 576 hours of study!
-          </p>
+      <section className="flex-auto flex-col m-auto w-auto " id="about">
+        <div className="lg:px-20 xl:px-40">
+          <h1 className="text-3xl font-bold text-center m-auto my-5">
+            About me:
+          </h1>
+          <h3 className="text-xl font-bold text-center my-5 mx-2">
+            Fullstack Developer, Web3 Enthusiast, Mountain Climber
+          </h3>
+          <div className="text-left m-2">
+            <p className="m-3">Marketer turned software engineer.</p>
+            <p className="m-3">
+              Experienced in React, JavaScript, and Ruby on Rails. Passionate
+              about building products that empower people to live better lives.
+              Excited to work in a fast paced, cutting-edge environment with a
+              team of other passionate builders.
+            </p>
+            <p className="m-3">
+              My excitement for software engineering and tech started May 12,
+              2021. I was spending my time reading about web3 and blockchain,
+              and wanted to understand how it worked underneath the hood.
+            </p>
+            <p className="m-3">
+              I started Solidity tutorials on CryptoZombies.io. I realized that
+              I needed to build up a better foundation, so I took a step back
+              and started to teach myself JavaScript.
+            </p>
+            <p className="m-3">
+              In January 2022, I started a 15 week software engineering program
+              at Flatiron School. The program totalled roughly 576 hours of
+              study!
+            </p>
+          </div>
         </div>
         {/* Start technologies */}
         <div className="bg-[#86BBD8] px-2 py-4 tablet:py-8 px-2" id="skills">
@@ -149,7 +152,10 @@ function About() {
           </div>
         </div>
         {/* end technologies */}
-        <div className="text-center my-6 tablet:my-8 mx-2" id="hobbies">
+        <div
+          className="text-center my-6 tablet:my-8 mx-2 lg:px-20 xl:px-40"
+          id="hobbies"
+        >
           <h4 className="text-base font-bold text-center m-auto">
             Hobbies and Interests:
           </h4>

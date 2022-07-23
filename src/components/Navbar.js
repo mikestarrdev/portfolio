@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="absolute top-0 flex bg-[#2F4858] w-full h-12">
+      <div className="absolute top-0 flex bg-[#21333E] w-full h-14">
         <span className="flex flex-start basis-5/6 text-white uppercase tracking-widest text-xl px-4 py-2 items-center">
           Mike Starr
         </span>
@@ -44,7 +44,7 @@ function Navbar() {
         </div>
       </div>
       <div
-        className={`${mobileNav} absolute fixed right-0 h-full w-1/2 xsm:w-2/5 tablet:w-2/6 lg:1/6 py-2 px-6 mt-12 text-right justify-end text-white text-lg bg-[#315771] border-[#2F4858] border-l-2 rounded-b leading-10 overflow-hidden`}
+        className={`${mobileNav} absolute fixed right-0 h-full w-1/2 xsm:w-2/5 tablet:w-2/6 lg:w-1/6 py-2 px-6 mt-12 text-right justify-end text-white text-lg bg-[#21333E] border-[#2F4858] border-l-2 rounded-b leading-10 overflow-hidden`}
       >
         <ul>
           <li onClick={handleMobileCollapse}>
