@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import hamburgerIcon from "../img/hamburger-icon.svg";
 
 function Navbar() {
   const [mobileNav, setMobileNav] = useState("hidden");

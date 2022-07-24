@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e18abb3.css",
-    "main.js": "/static/js/main.da350feb.js",
+    "main.css": "/static/css/main.9b95e8af.css",
+    "main.js": "/static/js/main.ba3e5443.js",
     "static/media/ruby.png": "/static/media/ruby.c1f7c7eb2141cd1c2518.png",
     "static/media/crypto-portal-1.png": "/static/media/crypto-portal-1.3c207b8b0b64993c5ff5.png",
     "static/media/crypto-portal-forum.png": "/static/media/crypto-portal-forum.ff8e13a46595218be13e.png",
@@ -12,11 +12,11 @@
     "static/media/github-icon.svg": "/static/media/github-icon.04ed74f38b41cdcbf14f80ae8cd0aa2b.svg",
     "static/media/hamburger-icon.svg": "/static/media/hamburger-icon.93f839359851d8ed4e0903e4c28c4c87.svg",
     "index.html": "/index.html",
-    "main.9e18abb3.css.map": "/static/css/main.9e18abb3.css.map",
-    "main.da350feb.js.map": "/static/js/main.da350feb.js.map"
+    "main.9b95e8af.css.map": "/static/css/main.9b95e8af.css.map",
+    "main.ba3e5443.js.map": "/static/js/main.ba3e5443.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e18abb3.css",
-    "static/js/main.da350feb.js"
+    "static/css/main.9b95e8af.css",
+    "static/js/main.ba3e5443.js"
   ]
 }

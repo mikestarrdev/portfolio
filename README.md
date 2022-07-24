@@ -1,4 +1,4 @@
-# Welcome to my portfolio site!
+# Welcome to my Portfolio!
 
 The purpose of this app is to demonstrate "proof of work," and to showcase my skills as a developer. This portfolio itself is meant to be a project that shows off my CSS, HTML and React skills.
 
